@@ -9,7 +9,7 @@ Any improvement will be appreciated.
 
 0. requirements:
 
-	The simulator is developed by C++ and Python, on Ubuntu.
+	The simulator is developed by C++ and Python 2, on Ubuntu.
 
 	The simulator uses Cython, which mixs python and C++. Please see the following website for details of Cython:
 	# http://cython.org/
