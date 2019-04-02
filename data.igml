@@ -1,0 +1,74 @@
+Database for city : CIVE-615-Demo
+Creator [ Kz ON April 1, 2019 ]
+graph [
+  directed 0
+  num_nodes 5
+  num_roads 8
+  all_light_time 100
+  all_road_lanes 1
+  node [
+    id 0
+    x 300
+    y 300
+  ]
+  node [
+    id 1
+    x 300
+    y 100
+  ]
+  node [
+    id 2
+    x 300
+    y 500
+  ]
+  node [
+    id 3
+    x 100
+    y 300
+  ]
+  node [
+    id 4
+    x 500
+    y 300
+  ]
+  edge [
+    source 0
+    target 1
+    ratio 0.6
+  ]
+  edge [
+    source 0
+    target 2
+    ratio 0.6
+  ]
+  edge [
+    source 0
+    target 3
+    ratio 0.6
+  ]
+  edge [
+    source 0
+    target 4
+    ratio 0.6
+  ]
+  edge [
+    source 1
+    target 3
+    ratio 0.6
+  ]
+  edge [
+    source 1
+    target 4
+    ratio 0.6
+  ]
+  edge [
+    source 2
+    target 3
+    ratio 0.6
+  ]
+  edge [
+    source 2
+    target 4
+    ratio 0.6
+  ]
+]

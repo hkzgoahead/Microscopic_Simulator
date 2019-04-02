@@ -1,0 +1,35 @@
+The ITS_simulator is developed by Zhang Siheng, Department of Automation, Tsinghua University.
+Here is the mailbox :
+#	zhangsh_20930@126.com
+Any bug report will be appreciated!
+Any advice for further development will be appreciated!
+
+0. requirements:
+
+	The simulator is developed by C++ and Python, on Ubuntu.
+
+	The simulator uses Cython, which mixs python and C++. Please see the following website for details of Cython:
+	# http://cython.org/
+
+	The UI of the simulator is based on tkinter. Please see the following website for details of tkiner:
+	# https://wiki.python.org/moin/TkInter/
+
+1. data
+	The format of data file	is based on a format ".gml", and I adapt it into ".igml" to satisfy the need of ITS(e.g, the traffic light time). 
+	A simplified [simple.igml] is included to illustrate the file format.
+
+2. model
+
+	The VISSIM has no API for algorithm, which is not convenience for research. But the physical model is well and I adapt the model to my project. If you are interested in the difference of my model and VISSIM's model, you can look up in the VISSIM manual and compare it with my code.
+        For the cause thar VISSIM is not open-source, here I do not want to discuss the VISSIM's model any further.
+        For one thing, several kinds of model are provided. You can switch it in the data file. In the future, I will develop a more flexible way to mix the models. If you have a better idea about the physical model, send your idea with your reference to me. In return, I will add you into the co-developer list.
+
+3. quick start
+
+	${ITS_root} represents the main directory of the code. Type the following instrucstions in the Terminal:
+
+		cd ${ITS_root}/vehicle/
+		python setup.py build_ext --inplace
+		cp ITS.so ../
+
+	After that, you can see ITS.so in ${ITS_root}, which means that it can work now!
